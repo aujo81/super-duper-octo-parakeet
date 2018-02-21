@@ -70,8 +70,8 @@ public class MessageServiceTest {
 	
 	@Test
 	public void testGetMessagesForYear() {
-		int expectedYear = 2017;
-		assertEquals("Assert messages for year 2017",ms.getAllMessagesForYear(expectedYear).size(), 3);
+		int expectedYear = 2018;
+		assertEquals("Assert messages for year 2018",ms.getAllMessagesForYear(expectedYear).size(), 3);
 		
 		assertEquals("Assert messages for year 2016",ms.getAllMessagesForYear(expectedYear+1).size(), 0);
 		assertEquals("Assert messages for year 2016",ms.getAllMessagesForYear(expectedYear-1).size(), 0);
